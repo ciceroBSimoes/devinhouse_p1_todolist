@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.itemFeito {
+    text-decoration: line-through;
+    /*border: 2px solid red;*/
+    padding: 2px;
+}
+.itemPendente{
+    /*border: 2px solid red;*/
+    padding: 2px;
+}
