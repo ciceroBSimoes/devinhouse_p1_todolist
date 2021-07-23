@@ -6,23 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <link rel="shortcut icon" href="imgs/favicon-32x32.png" sizes="32x32" type="image/x-icon">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
     <script defer src="script.js"></script>
     <title>DevinHouse - To do List</title>
 </head>
 
-<body>
-    <header>
+<body onload="carregaListaLs()">
+    <main>
         <h1>Lista de Tarefas</h1>
-    </header>
-    <div class="addTarefa">
-        <input type="text" id="inputTarefa" placeholder="Descreva sua tarefa...">
-        <button onclick="adicionar()">Adicionar</button>
-    </div>
-    <div>
-        <ul id="tarefas"></ul>
-    </div>
-    
+        <div class="addTarefa">
+            <input type="text" id="inputTarefa" placeholder="Descreva uma tarefa...">
+            <button id="btAdicionar">Adicionar</button>
+        </div>
+        <div>
+            <ul id="tarefas" class="lista">
+            </ul>
+        </div>
+    </main>
 </body>
 
 </html>

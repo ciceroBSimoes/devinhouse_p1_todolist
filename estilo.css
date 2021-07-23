@@ -1,14 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
-
-.itemFeito {
-    text-decoration: line-through;
-    /*border: 2px solid red;*/
-    padding: 2px;
-}
-.itemPendente{
-    /*border: 2px solid red;*/
-    padding: 2px;
+ul {
+    list-style: none;
 }
