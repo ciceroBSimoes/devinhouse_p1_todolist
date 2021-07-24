@@ -31,8 +31,8 @@ function incrementaLista(itemId, textoItem){
     var lista = document.querySelector('#tarefas');
     var li = document.createElement('li');
 
-    var strHtml = '<div id="'+itemId+'"><input type="checkbox" onchange="atualizaStatus(this)">'+
-                '<label>'+textoItem+'</label><button id="btExcluir" onclick="excluirItem(this)">Excluir</button></div>';
+    var strHtml = '<div id="'+itemId+'" class="itemLst"><input type="checkbox" id ="check'+itemId+'" onchange="atualizaStatus(this)">'+
+                '<label for="check'+itemId+'">'+textoItem+'</label><button id="btExcluir" onclick="excluirItem(this)"><ion-icon name="trash-outline"></ion-icon></button></div>';
             
     li.innerHTML = strHtml;
     lista.appendChild(li);
